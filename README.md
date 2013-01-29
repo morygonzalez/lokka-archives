@@ -8,7 +8,7 @@ This is the plugin which enables your lokka site to display Entry archives.
 
 ```
 cd $LOKKA_ROOT/public/plugin
-git clone git://github.com/morygonzalez/lokka-auto_pagerize.git
+git clone git://github.com/morygonzalez/lokka-archives.git
 ```
 
 ## How to use
