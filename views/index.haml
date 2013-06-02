@@ -1,13 +1,13 @@
 %ul.year-list
   - year_list.each do |year|
-    %li= link_to year, "/archives/#{year}"
+    %li= link_to year.to_s, "/archives/#{year}"
 
 .archive-by-month
-  %h2= t('archives')
+  %h2= t('archives.title')
   %ul
-    - @month_posts.each do |month, posts|
+    - @month_posts.each do |datetime, posts|
       %li.year
-        %h3== #{month.year}-#{month.month}
+        %h3= l datetime.to_date, format: :year_month
         %ul
           - posts.each do |post|
             %li
